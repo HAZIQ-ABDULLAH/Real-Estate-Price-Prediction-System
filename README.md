@@ -1,53 +1,57 @@
-# 🏠 House Price Prediction using Machine Learning
+# House Price Prediction using Machine Learning
 
 ## 📌 Project Overview
-This project predicts residential house prices using supervised machine learning techniques.
-It demonstrates a complete end-to-end ML workflow including data preprocessing, feature
-engineering, model training, evaluation, and interpretation.
+This project predicts house prices using machine learning regression techniques.
+It uses the Kaggle House Prices dataset and follows a complete ML workflow:
+EDA, preprocessing, model training, evaluation, and prediction.
 
-## 🎯 Problem Statement
-Predict house prices based on property characteristics such as quality, area, location,
-and construction details.
+---
 
 ## 📂 Dataset
-- **Name:** House Prices – Advanced Regression Techniques
-- **Source:** Kaggle
-- **Samples:** 1460
-- **Features:** 80 input features (numerical + categorical)
-- **Target Variable:** SalePrice
+Source: Kaggle – House Prices: Advanced Regression Techniques
 
-## ⚙️ Preprocessing
-- Missing value imputation (median & most frequent)
-- One-hot encoding for categorical features
-- Log transformation applied to target variable to reduce skewness
-- Unified preprocessing using Scikit-learn pipelines
+The dataset consists of two files:
 
-## 🤖 Models Implemented
-- Linear Regression (Baseline)
-- Random Forest Regressor (Final Model)
-- Gradient Boosting Regressor
+- `train.csv` → Used for training and evaluation (contains SalePrice)
+- `test.csv` → Used for predicting unseen data (no SalePrice)
+
+---
+
+## ⚙️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib / Seaborn
+- Scikit-learn
+
+---
+
+## 🔄 Workflow
+1. Data Loading
+2. Exploratory Data Analysis (EDA)
+3. Data Cleaning & Preprocessing
+4. Feature Engineering
+5. Model Training
+6. Model Evaluation
+7. Prediction on Unseen Data
+8. Saving Output Files
+
+---
 
 ## 📊 Evaluation Metrics
-- Root Mean Squared Error (RMSE)
-- Mean Absolute Error (MAE)
-- Diagnostic visualization (Actual vs Predicted)
+- RMSE
+- R² Score
 
-## 🔍 Key Insights
-- OverallQual and GrLivArea are the strongest predictors
-- Tree-based models outperform linear models
-- Log transformation improves model stability and performance
+---
 
-## 📈 Visual Outputs
-All plots are saved in the `figures/` directory:
-- Target distribution
-- Correlation heatmap
-- Missing values
-- Feature importance
-- Actual vs predicted prices
+## 📁 Output Files
+- Saved visualizations (figures)
+- `test_predictions.csv` (predicted house prices)
 
-## 💾 Model Saving
-The trained model is saved using `joblib` for reuse and deployment.
+---
 
-## 🚀 Conclusion
-The final Random Forest model demonstrates strong predictive performance and can be extended
-for real-world real estate price estimation systems.
+## 🚀 Future Enhancements
+- Advanced regression models
+- Hyperparameter tuning
+- Deployment as a web app
+
