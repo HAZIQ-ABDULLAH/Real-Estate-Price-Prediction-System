@@ -11,7 +11,13 @@ Source: Kaggle – House Prices: Advanced Regression Techniques
 
 The project utilizes two datasets:
 
+
+Download link:
+
+https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
 train.csv
+
+
 
 Contains historical housing data with the target variable SalePrice
 
